@@ -1,0 +1,11 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="openmoji:flag-canada">
+<path id="Vector" d="M5 17H67V55H5V17Z" fill="white"/>
+<path id="Vector_2" d="M5 17H22V55H5V17ZM50 17H67V55H50V17Z" fill="#D22F27"/>
+<g id="Vector_3">
+<path d="M36 46V41V46ZM36 41H42.8L42 39L46 35V32H43L39 36V29L36 26M36 41H29.2L30 39L26 35V32H29L33 36V29L36 26" fill="#D22F27"/>
+<path d="M36 46V41M36 41H42.8L42 39L46 35V32H43L39 36V29L36 26L33 29V36L29 32H26V35L30 39L29.2 41H36Z" stroke="#D22F27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_4" d="M5 17H67V55H5V17Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

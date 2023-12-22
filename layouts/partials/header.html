@@ -1,19 +1,35 @@
-<nav class="navbar navbar-expand-md navbar-light bg-body">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">{{ .Site.Title }}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        {{ range .Site.Menus.main }}
-        <li class="nav-item">
-          <a class="nav-link{{ if $.IsMenuCurrent "main" . }} active" aria-current="page{{ end }}" 
-          href="{{ .URL }}" {{ if eq .Params.blank true }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+<!-- layouts/partials/header.html -->
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <a href="{{ .Site.BaseURL }}" class="logo d-flex align-items-center">
+      <img src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/img/logo.png" alt="">    </a>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="{{ .Site.BaseURL }}" class="{{ if eq .Section "home" }}active{{ end }}">Home</a></li>
+        <li><a href="{{ .Site.BaseURL }}html/about-us.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="{{ .Site.BaseURL }}html/services.html">Services</a>
+          <div class="dropdown-menu rounded">
+            <div class="row">
+              {{ range .Site.Data.services }}
+              <div class="col-md-12">
+                <a href="{{ .url }}">{{ .name }}</a>
+              </div>
+              {{ end }}
+            </div>
+          </div>
         </li>
-        {{ end }}
+        <li class="dropdown">
+          <a href="{{ .Site.BaseURL }}pages/industries/">Industries</a>
+          <!-- Add your industries links here -->
+        </li>
+        <li><a href="{{ .Site.BaseURL }}pages/case-study/">Case studies</a></li>
+        <li><a class="get-a-quote" href="{{ .Site.BaseURL }}pages/contact/">Get A Quote</a></li>
       </ul>
-    </div>
+    </nav><!-- .navbar -->
+
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
   </div>
-</nav>
+</header><!-- End Header -->

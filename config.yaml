@@ -11,3 +11,13 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+mediaTypes:
+  application/x-php:
+    suffixes:
+      - php
+
+outputFormats:
+  PHP:
+    mediaType: application/x-php
+    isPlainText: true
+    baseName: index

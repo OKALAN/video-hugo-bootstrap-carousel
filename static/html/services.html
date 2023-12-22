@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SKALETEK</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons 
+  <link href="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/favicon.png" rel="icon">
+  <link href="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <link rel="shortcut icon" href="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/img/favicon.ico"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/mdb/css/mdb.min.css" rel="stylesheet">
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SKALETEK
+  ======================================================== -->
+</head>
+
+<body class="page page-service">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="{{ .Site.BaseURL }}" class="logo d-flex align-items-center">
+        <img src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/img/logo.png" alt="">    </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{{ .Site.BaseURL }}" class="{{ if eq .Section "home" }}active{{ end }}">Home</a></li>
+          <li><a href="{{ .Site.BaseURL }}/about-us/">About Us</a></li>
+          <li class="dropdown">
+            <a href="{{ .Site.BaseURL }}html/services.html">Services</a>
+            <div class="dropdown-menu rounded">
+              <div class="row">
+                {{ range .Site.Data.services }}
+                <div class="col-md-12">
+                  <a href="{{ .url }}">{{ .name }}</a>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="{{ .Site.BaseURL }}pages/industries/">Industries</a>
+            <!-- Add your industries links here -->
+          </li>
+          <li><a href="{{ .Site.BaseURL }}pages/case-study/">Case studies</a></li>
+          <li><a class="get-a-quote" href="{{ .Site.BaseURL }}pages/contact/">Get A Quote</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+  
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="page-hero hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-12 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Services</h2>
+          <nav class="nav-breadcrumb" aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Services</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+    <!-- ======= feature box Section ======= -->
+    <section id="feature-box" class="feature-box pt-5">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="row gy-4 align-items-center">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 sk-n-mobile">
+                  <img alt="" class="img-fluid" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/services-we-offer.png"/>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                  <div class="box">
+                    <div class="section-title">
+                      <h2>Services <span class="sign-line-2">We offer</span></h2>
+                    </div>
+                    <p class="mt-4">
+                    We are dedicated to empowering businesses with cutting-edge technology and expert solutions that drive growth and success.
+                    Our comprehensive range of services is designed to address the unique needs of modern organizations, offering a holistic approach to transform and optimize your business. Explore our top-notch services below.                    
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 sk-mobile">
+                  <img alt="" class="img-fluid" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/services-we-offer.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End feature box Section -->
+
+
+    <section class="service-grid pb-5 pt-5">
+        
+        <div class="text-center mb-4">
+          <div class="section-title">
+            <h2>Our <span class="sign-line-2">Services</span></h2>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center mb-4">
+                    <div class="service-title">
+                        <h4>Data Science</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="service-data-science.php"><img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/data-science.png"/></a>
+                        </div>
+                        <h4>Data Science</h4>
+                        <p>Leverage Big data to determine trends and make effective decisions about your operations, target audiences, services, or products. Our powerful analytics....</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="#"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/real-time.png"/></a>
+                        </div>
+                        <h4>Real-Time AI</h4>
+                        <p>In real-time AI, data is continuously collected, processed, and analyzed as it streams in, allowing organizations to make critical decisions in real-time... </p>
+                        <!--<a href="#">Read More</a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="#"><img alt="" class="mb-4" src="/img/predictive-chart.png"/></a>
+                        </div>
+                        <h4>Model generation</h4>
+                        <p>A data model organizes data components and demonstrates how the different components relate to each other. Model generation is a critical first step after defining a business's requirement...</p>
+                         <!--<a href="#">Read More</a>-->
+                </div>
+         </div>
+         <div class="row">
+                  <div class="col-lg-4 col-md-6 text-center mb-3">
+                      <div class="service-wrap">
+                          <div class="service-icon">
+                          <a href="#"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/360.png"/></a>
+                          </div>
+                          <h4>Customer 360</h4>
+                          <p>
+                          Customer 360, also known as 360-degree customer view, refers to a comprehensive and holistic understanding of a customer by
+                          ....</p>                  
+                  </div>
+         </div>  
+    </section> 
+
+    <section class="service-grid pb-5 pt-5">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center mb-4">
+                    <div class="service-title">
+                        <h4>Data Analytics</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="service-data-analytics.php"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/analytics.png"/></a>
+                        </div>
+                        <h4 class="text-services">Data Analytics</h4>
+                        <p>Data analytics implies developing an infrastructure for data integration, analysis, and reporting. An experienced provider of data analytics services, SKALETEK ....</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="service-elasticsearch.php "> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/elasticsearch.png"/></a>
+                        </div>
+                        <h4>Elasticsearch Solutions</h4>
+                        <p>Elasticsearch is a search and analytics engine commonly used for business analytics, log analytics, and operational....</p>                        <!--<a href="#">Read More</a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="#"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/iot.png"/></a>
+                        </div>
+                        <h4>IOT Analytics</h4>
+                        <p>IoT Analytics, also known as Internet of Things Analytics, refers to the process of collecting, processing, and analyzing data generated by Internet of Things (IoT) devices....</p>
+                         <!--<a href="#">Read More</a>-->
+                </div>  
+              </div>  
+              <div class="row">
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="#"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/analytics.png"/></a>
+                        </div>
+                        <h4>Predictive Analytics</h4>
+                        <p>SKALETEK’s data analytics services help you draw meaningful, actionable insights from historical and real-time data. Using them,....</p>
+                    </div>
+                </div>
+
+              </div>      
+          </div>
+    </section> 
+
+    <section class="service-grid pb-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center mb-4">
+                    <div class="service-title">
+                        <h4>Data Visualization</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="service-data-visualization.php"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/data-analytics.png"/></a>
+                        </div>
+                        <h4>Data Visualization</h4>
+                        <p>Identify patterns in data, improve data quality, and enable smarter decision-making with data visualization services. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="#"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/powerbi.png"/></a>
+                        </div>
+                        <h4>Microsoft Power BI</h4>
+                        <p>Microsoft Power BI is a powerful business intelligence and data visualization tool developed by Microsoft....</p>
+                        <!--<a href="#">Read More</a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="#"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/qlik.png"/></a>
+                        </div>
+                        <h4>Qlik Sense & Qlik View</h4>
+                        <p>
+                    Qlik Sense and QlikView are two popular data visualization and business intelligence (BI) platforms developed by Qlik. Both tool....</p>
+                                            <!--<a href="#">Read More</a>-->
+                </div>
+         </div>
+    </section> 
+
+    <section class="service-grid pb-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center mb-4">
+                    <div class="service-title">
+                        <h4>Cloud</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="service-cloud-ops.php"><img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/cloudOps.png"/></a>
+                        </div>
+                        <h4>CloudOps</h4>
+                        <p>CloudOps is an approach for the administration of the delivery, optimization, and performance of every IT service in a cloud setup. It....</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="service-dev-ops.php"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/devops.png"/></a>
+                        </div>
+                        <h4>DevOps</h4>
+                        <p>SKALETEK’s DevOps approach integrates the best tools, CI/CD processes, and practices to expedite the software delivery process. We ensure the swift onboarding of applications through 
+                      the automation of the end-to-end delivery pipeline...</p>                        
+                      <!--<a href="#">Read More</a>-->
+                    </div>
+                </div>
+             
+         </div>
+    </section> 
+
+    <section class="service-grid pb-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center mb-4">
+                    <div class="service-title">
+                        <h4>Big Data Implementation</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="service-big-data.php"><img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/big-data-1.png"/></a>
+                        </div>
+                        <h4>Big Data Implementation</h4>
+                        <p>As data sources increase, the biggest growth comes in the form of disparate information whose scale and size can be classified as Big Data. ABC.com's experts understand....</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-3">
+                    <div class="service-wrap">
+                        <div class="service-icon">
+                        <a href="#"> <img alt="" class="mb-4" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/warehouse.png"/></a>
+                        </div>
+                        <h4>Data warehouse</h4>
+                        <p>Data warehousing is a crucial component of modern data management that involves the process of collecting,
+                       storing, and managing large volumes of structured and unstructured data from.....</p>                      
+                      <!--<a href="#">Read More</a>-->
+                    </div>
+                </div>
+             
+         </div>
+    </section>
+
+
+
+
+
+     <!-- ======= Slider tech Section ======= -->
+    <section id="slider-tech"  class="slider-tech pt-5 theme-b-light">
+      <div class="container-fluid">
+        <div class="row gy-4">
+          <div class="mobile col-md-12">
+            <div class="section-header">
+              <h2 class="text-center">Data Science Tools & <span class="sign-line-2">Technologies</span></h2>
+            </div>
+          </div>
+          <div class="col-md-8 slider-tech-content swiper slider-tech-box">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/google-ai-platform.png)"></div>
+                <div class="swiper-slide" style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/amazon_mc_learning.png)"></div>
+                <div class="swiper-slide"  style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/apache_spark.png)"></div>
+                <div class="swiper-slide"  style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/azure_mc_learning.png)"></div>
+                <div class="swiper-slide"  style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/hadoop.png)"></div>
+                <div class="swiper-slide" style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/java.png)"></div>
+                <div class="swiper-slide" style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/google-ai-platform.png)"></div>
+                <div class="swiper-slide" style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/amazon_mc_learning.png)"></div>
+                <div class="swiper-slide"  style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/apache_spark.png)"></div>
+                <div class="swiper-slide"  style="background-image: url(https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/azure_mc_learning.png)"></div>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="section-header">
+              <h2 class="text-start">Data Science Tools & <span class="sign-line-2">Technologies</span></h2>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!--End Slider tech -->
+
+    <section class="industry-content theme-b" style="padding-bottom: 80px;">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-start">
+                <h2>Industries <span class="sign">We Serve</span></h2>
+                <p class="mb-3">SKALETEK creates robust business analytics solutions for various industries.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid square-dot-bg-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 industry-content-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide industry-content-slide">
+                    <div class="industry-content-img">
+                      <img alt="" class="img-fluid" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/insdustry-serve-1.png">
+                      <h4 class="mt-4">Insurance</h4>
+                      <p class="mt-2">
+                        Custom business analytics reports and dashboards help you comprehend data quickly, so you can find high-performing areas, those that need attention, and those with potential growth opportunities. Facilitate faster decision-making and boost customer relations.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide industry-content-slide">
+                    <div class="industry-content-img">
+                      <img alt="" class="img-fluid" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/insdustry-serve-4.png">
+                      <h4 class="mt-4">Banking and Financials</h4>
+                      <p class="mt-2">
+                        Gain better insights about the user experience from a customer-first perspective to improve functionality and speed across your banking channels. Our solutions will secure against fraudulent activities and keep data safe while working with third-party applications.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide industry-content-slide">
+                    <div class="industry-content-img">
+                      <img alt="" class="img-fluid" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/insdustry-serve-5.png">
+                      <h4 class="mt-4">Logistics and Transportation</h4>
+                      <p class="mt-2">
+                       SkaleTek is where data sciences meet logistics and transportation services. As a pioneering SaaS, Big Data, and Data Analytics company, we revolutionize the way logistics and transportation businesses operate. Our tailored solutions enable efficient route optimization, real-time tracking, and predictive analytics, empowering you to deliver goods faster, minimize costs, and enhance customer satisfaction.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide industry-content-slide">
+                    <div class="industry-content-img">
+                      <img alt="" class="img-fluid" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/insdustry-serve-3.png">
+                      <h4 class="mt-4">Healthcare</h4>
+                      <p class="mt-2">
+                        Impart unified digital experiences and surpass customer expectations to have more control over digitalized healthcare delivery. Foster better patient engagement and maximize care outcomes with business analytics solutions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide industry-content-slide">
+                    <div class="industry-content-img">
+                      <img alt="" class="img-fluid" src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/assets/img/insdustry-serve-2.png">
+                      <h4 class="mt-4">Manufacturing</h4>
+                      <p class="mt-2">
+                        Empower your manufacturing plant to operate intelligently, sustain quality, maximize efficiency, and lower the risk of workplace injury. Real-time data visualization helps you drive greater ROI and improve your bottom line.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact-section pt-5">
+      </section><!-- End Why choose Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-12 footer-info">
+          <a href="index.php" class="logo d-flex align-items-center">
+            <img
+              src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/img/logo.png"
+              alt=""
+            />
+          </a>
+          <p>
+            Empowering Businesses with <br />
+            SaaS Solutions
+          </p>
+          <div class="social-links d-flex mt-4">
+            <a
+              href="https://www.linkedin.com/company/skaletek/?viewAsMember=true"
+              class="linkedin"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <!-- <a href="#" class="youtube"><i class="bi bi-youtube"></i></a> -->
+            <a
+              href="https://www.facebook.com/profile.php?id=100094769117376&mibextid=LQQJ4d"
+              class="facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+            <a
+              href="https://instagram.com/skaletek?igshid=MzRlODBiNWFlZA=="
+              class="instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+    
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="pages/about-us.php">About us</a></li>
+            <li><a href="pages/services.php">Services</a></li>
+            <li><a href="pages/case-study.php">Case Study</a></li>
+            <li><a href="pages/privacy-policy.php">Privacy policy</a></li>
+          </ul>
+        </div>
+    
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>&nbsp;</h4>
+          <ul>
+            <li><a href="pages/industries.php">Industries</a></li>
+            <li><a href="pages/blog.php">Blog</a></li>
+            <li><a href="pages/contact.php">Contact</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="pages/service-data-science.php">Data Science</a></li>
+            <li><a href="pages/service-data-analytics.php">Data Analytics</a></li>
+            <li>
+              <a href="pages/service-big-data.php">Big Data Implementation</a>
+            </li>
+            <li><a href="#">Artificial Intelligence</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>&nbsp;</h4>
+          <ul>
+            <li>
+              <a href="pages/service-data-visualization.php">Data Visualization</a>
+            </li>
+            <li><a href="pages/service-dev-ops.php">DevOps</a></li>
+            <li><a href="#">Microsoft Power BI</a></li>
+            <li><a href="#">Business Intelligence</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>SKALETEK</span></strong
+        >. All Rights Reserved
+      </div>
+    </div>
+    
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+  
+  <div class="linkedin">
+    <a class="d-flex align-items-center justify-content-center" href="https://www.linkedin.com/company/skaletek/"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <button onclick="topFunction()" id="top-btn"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/mdb/js/mdb.min.js"></script>
+  <script src="/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

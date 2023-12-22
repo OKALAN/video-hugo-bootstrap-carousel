@@ -1,7 +1,87 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col bg-dark text-white p-3">
-      Copyright &copy; <span id="js-year"><noscript>{{ now.Format "2006" }}</noscript></span> {{ with .Site.Copyright }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}
+<div class="container">
+  <div class="row gy-4">
+    <div class="col-lg-4 col-md-12 footer-info">
+      <a href="index.php" class="logo d-flex align-items-center">
+        <img
+          src="https://skaletek-website-bucket.s3.us-east-2.amazonaws.com/media/img/logo.png"
+          alt=""
+        />
+      </a>
+      <p>
+        Empowering Businesses with <br />
+        SaaS Solutions
+      </p>
+      <div class="social-links d-flex mt-4">
+        <a
+          href="https://www.linkedin.com/company/skaletek/?viewAsMember=true"
+          class="linkedin"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <!-- <a href="#" class="youtube"><i class="bi bi-youtube"></i></a> -->
+        <a
+          href="https://www.facebook.com/profile.php?id=100094769117376&mibextid=LQQJ4d"
+          class="facebook"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+        <a
+          href="https://instagram.com/skaletek?igshid=MzRlODBiNWFlZA=="
+          class="instagram"
+          ><i class="bi bi-instagram"></i
+        ></a>
+      </div>
     </div>
+
+    <div class="col-lg-2 col-6 footer-links">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="pages/about-us.php">About us</a></li>
+        <li><a href="pages/services.php">Services</a></li>
+        <li><a href="pages/case-study.php">Case Study</a></li>
+        <li><a href="pages/privacy-policy.php">Privacy policy</a></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-2 col-6 footer-links">
+      <h4>&nbsp;</h4>
+      <ul>
+        <li><a href="pages/industries.php">Industries</a></li>
+        <li><a href="pages/blog.php">Blog</a></li>
+        <li><a href="pages/contact.php">Contact</a></li>
+        <li><a href="#">Marketing</a></li>
+        <li><a href="#">Graphic Design</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-2 col-6 footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="pages/service-data-science.php">Data Science</a></li>
+        <li><a href="pages/service-data-analytics.php">Data Analytics</a></li>
+        <li>
+          <a href="pages/service-big-data.php">Big Data Implementation</a>
+        </li>
+        <li><a href="#">Artificial Intelligence</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-2 col-6 footer-links">
+      <h4>&nbsp;</h4>
+      <ul>
+        <li>
+          <a href="pages/service-data-visualization.php">Data Visualization</a>
+        </li>
+        <li><a href="pages/service-dev-ops.php">DevOps</a></li>
+        <li><a href="#">Microsoft Power BI</a></li>
+        <li><a href="#">Business Intelligence</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr />
+<div class="container mt-4">
+  <div class="copyright">
+    &copy; Copyright <strong><span>SKALETEK</span></strong
+    >. All Rights Reserved
   </div>
 </div>
